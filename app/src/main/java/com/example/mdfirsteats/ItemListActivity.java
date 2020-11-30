@@ -42,7 +42,8 @@ public class ItemListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_list);
-
+//        RestaurantContent.ITEMS.add(new Restaurant("New what", "New what", "New what", "New what",1, 2, 2  ));
+        RestaurantContent.init(this);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setTitle(getTitle());
